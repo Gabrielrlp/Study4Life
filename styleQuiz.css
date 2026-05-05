@@ -1,0 +1,298 @@
+@charset "utf-8";
+ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+header {
+  color: #ffffff;
+  border-bottom: 1px solid #444;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin: 0px 20px;
+  width: 100px;
+  height: 100px;
+}
+
+nav {
+  margin-left: 40px;
+  display: flex;
+  gap: 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: 0.3s;
+  font-size: 22px;
+}
+
+nav a:hover {
+  color: #7ed957;
+}
+
+.icone-perfil {
+  margin-left: auto;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 65px;
+  width: 65px;
+  background: #2a2a2a;
+  margin-right: 30px;
+}
+
+.menu-icon {
+  display: none;
+  width: 25px;
+  cursor: pointer;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -280px;
+  height: 100vh;
+  width: 280px;
+  background-color: #111;
+  padding-top: 60px;
+  transition: 0.3s ease;
+  z-index: 1001;
+  overflow-y: auto;
+  border: 1px solid #7ed957;
+}
+
+.sidebar.active {
+  right: 0;
+}
+
+.sidebar a,
+.sidebar p {
+  display: block;
+  padding: 15px 25px;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar p {
+  color: #7ed957;
+}
+
+.sidebar a:hover {
+  background-color: #575757;
+  color: #7ed957;
+}
+
+.closebtn {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #7ed957;
+}
+
+.headerp {
+  cursor: default;
+  color: #7ed957;
+  font-weight: bold;
+  transition: 0.3s;
+  font-size: 22px;
+}
+
+.conteudo-principal {
+  width: 100%;
+  padding: 45px;
+}
+
+.topo-pagina {
+  margin-bottom: 35px;
+}
+
+.topo-pagina h1 {
+  margin-bottom: 8px;
+  font-weight: 800;
+}
+
+.topo-pagina p {
+  color: #7ed957;
+  font-weight: 600;
+  padding: 15px 0px 0px 0px;
+}
+
+.grid-materias {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 25px;
+}
+
+.card-materia {
+  position: relative;
+  min-height: 220px;
+  background: #1f1f1f;
+  border: 2px solid #333;
+  border-radius: 18px;
+  text-decoration: none;
+  color: white;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.card-materia:hover {
+  transform: translateY(-8px);
+  border-color: #7ed957;
+  box-shadow: 0 0 18px rgba(126, 217, 87, 0.18);
+}
+
+.card-materia .icone {
+  font-size: 58px;
+  margin-bottom: 18px;
+}
+
+.card-materia h3 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.card-materia p {
+  text-align: center;
+  font-size: 15px;
+  color: #c8c8c8;
+  line-height: 1.4;
+}
+
+/*responsividade*/
+@media (max-width: 440px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  header {
+    margin-bottom: 0;
+  }
+
+  .header-container {
+    padding: 10px 14px;
+  }
+
+  .logo {
+    width: 85px;
+    height: 85px;
+    margin: 0;
+  }
+
+  .icone-perfil {
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    margin-right: 8px;
+  }
+
+  .menu-icon {
+    width: 30px;
+    height: 28px;
+  }
+
+  .sidebar {
+    width: 260px;
+    right: -260px;
+  }
+
+  .conteudo-principal {
+    padding: 25px 16px;
+  }
+
+  .topo-pagina {
+    text-align: center;
+    margin-bottom: 28px;
+  }
+
+  .topo-pagina h1 {
+    font-size: 30px;
+  }
+
+  .topo-pagina p {
+    font-size: 14px;
+  }
+
+  .grid-materias {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .card-materia {
+    min-height: 150px;
+    padding: 14px;
+  }
+
+  .card-materia .icone {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  .card-materia h3 {
+    font-size: 18px;
+  }
+
+  .card-materia p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .header-container {
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .logo {
+    width: 85px;
+    height: 85px;
+    margin: 0;
+  }
+
+  .apagar {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    width: 32px;
+    height: 30px;
+  }
+
+  .icone-perfil {
+    margin-left: auto;
+    margin-right: 10px;
+    width: 55px;
+    height: 55px;
+    font-size: 22px;
+  }
+}

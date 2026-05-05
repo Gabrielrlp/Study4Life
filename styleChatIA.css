@@ -1,0 +1,384 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+}
+
+header {
+  border-bottom: 1px solid #444;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin: 0 20px;
+  width: 100px;
+  height: 100px;
+}
+
+nav {
+  margin-left: 40px;
+  display: flex;
+  gap: 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.3s;
+  font-size: 22px;
+}
+
+nav a:hover {
+  color: #7ed957;
+}
+
+.icone-perfil {
+  margin-left: auto;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 65px;
+  width: 65px;
+  background: #2a2a2a;
+  margin-right: 30px;
+}
+
+.menu-icon {
+  display: none;
+  width: 25px;
+  cursor: pointer;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -280px;
+  height: 100vh;
+  width: 280px;
+  background-color: #111;
+  padding-top: 60px;
+  transition: 0.3s ease;
+  z-index: 1001;
+  overflow-y: auto;
+  border: 1px solid #7ed957;
+}
+
+.sidebar.active {
+  right: 0;
+}
+
+.sidebar a,
+.sidebar p {
+  display: block;
+  padding: 15px 25px;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar p {
+  color: #7ed957;
+}
+
+.sidebar a:hover {
+  background-color: #575757;
+  color: #7ed957;
+}
+
+.closebtn {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #7ed957;
+}
+
+.headerp {
+  cursor: default;
+  color: #7ed957;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.layout-chat {
+  display: flex;
+  height: calc(100vh - 110px);
+  position: relative;
+}
+
+.toggle-historico {
+  position: absolute;
+  top: 130px;
+  left: 22px;
+  z-index: 1000;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  height: 42px;
+  width: 42px;
+}
+
+.novo-chat {
+  text-align: left;
+  background: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  height: 42px;
+  width: 100%;
+  font-size: 14px;
+  margin: 0px 0px 20px 0px;
+  font-size: 20px;
+  transition: 0.2s;
+}
+
+.toggle-historico:hover {
+  transform: scale(1.1);
+}
+
+.novo-chat,
+.item-historico {
+  padding-left: 30px;
+  font-weight: 800px;
+}
+
+.historico {
+  width: 280px;
+  background: #111;
+  padding: 70px 20px 20px 0px;
+  border: 1px solid #7ed957;
+  transition: 0.3s;
+}
+
+.historico h2 {
+  margin-bottom: 15px;
+  padding-left: 30px;
+  color: rgb(146, 137, 137);
+}
+
+.historico.fechado {
+  width: 0;
+  padding: 0;
+  overflow: hidden;
+  border: none;
+}
+
+.item-historico {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-bottom: 10px;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.item-historico:hover,
+.novo-chat:hover {
+  background: #334155;
+  transform: translateX(5px);
+}
+
+/* CHAT */
+.conteinarChat {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-central {
+  width: 100%;
+  max-width: 800px;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box-resposta {
+  flex: 1;
+  padding: 25px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.mensagem {
+  max-width: 70%;
+  padding: 14px;
+  margin-bottom: 12px;
+  border-radius: 18px;
+  line-height: 1.5;
+  animation: fadeIn 0.3s ease;
+}
+
+.ia {
+  background: #1e293b;
+  align-self: flex-start;
+}
+
+.usuario {
+  background: #7ed957;
+  color: black;
+  align-self: flex-end;
+}
+
+.input-area {
+  display: flex;
+  padding: 20px;
+}
+
+.caixa-pergunta {
+  flex: 1;
+  padding: 16px;
+  border-radius: 20px;
+  border: 1px solid #7ed957;
+  background: #111;
+  color: white;
+  outline: none;
+}
+
+.botao-enviar {
+  margin-left: 10px;
+  padding: 12px 18px;
+  background: #7ed957;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 440px) {
+  body {
+    overflow-x: hidden;
+    min-height: 90px;
+  }
+
+  .header-container {
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .logo {
+    width: 85px;
+    height: 85px;
+    margin: 0;
+  }
+
+  .apagar {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    width: 32px;
+    height: 30px;
+  }
+
+  .icone-perfil {
+    margin-left: auto;
+    margin-right: 12px;
+    width: 55px;
+    height: 55px;
+    font-size: 24px;
+  }
+
+  .layout-chat {
+    height: calc(100vh - 101px);
+  }
+
+  .toggle-historico {
+    top: 115px;
+    left: 14px;
+  }
+
+  .historico {
+    position: fixed;
+    top: 101px;
+    left: 0;
+    width: 80%;
+    max-width: 300px;
+    height: calc(100vh - 101px);
+    z-index: 999;
+    padding: 70px 15px 20px 0;
+    transform: translateX(0);
+  }
+
+  .historico.fechado {
+    width: 80%;
+    padding: 70px 15px 20px 0;
+    transform: translateX(-100%);
+    overflow: hidden;
+  }
+
+  .conteinarChat {
+    width: 100%;
+  }
+
+  .chat-central {
+    height: 100%;
+    max-width: 100%;
+  }
+
+  .box-resposta {
+    padding: 70px 14px 15px;
+  }
+
+  .mensagem {
+    max-width: 90%;
+    font-size: 14px;
+  }
+
+  .input-area {
+    padding: 12px;
+    gap: 8px;
+  }
+
+  .caixa-pergunta {
+    padding: 14px;
+    font-size: 14px;
+  }
+
+  .botao-enviar {
+    margin-left: 0;
+    padding: 12px 14px;
+    border-radius: 16px;
+  }
+
+  .sidebar {
+    width: 260px;
+    right: -260px;
+  }
+}

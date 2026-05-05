@@ -1,0 +1,71 @@
+@charset "UTF-8";
+ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.logo {
+  margin: 0px 20px;
+  width: 100px;
+  height: 100px;
+}
+
+.termos-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.termos-container h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.data {
+  text-align: center;
+  color: #aaa;
+  margin-bottom: 30px;
+}
+
+.termos-box {
+  background: #2c3136;
+  padding: 28px;
+  border-radius: 15px;
+  border: 1px solid #7ed957;
+
+  max-height: 530px;
+  overflow-y: auto;
+}
+
+.termos-box::-webkit-scrollbar {
+  width: 8px;
+}
+
+.termos-box::-webkit-scrollbar-thumb {
+  background: #7ed957;
+  border-radius: 10px;
+}
+
+.termos-box h2 {
+  margin-top: 20px;
+  color: #7ed957;
+}
+
+.termos-box p {
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}

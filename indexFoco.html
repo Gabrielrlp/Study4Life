@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <title>Foco</title>
+  <link rel="stylesheet" href="styleFoco.css" />
+</head>
+
+<body>
+  <header>
+    <section class="header-container">
+      <a href="indexHome.html"><img src="study4life_glitch_rgb.gif" class="logo" alt="logo study4life" /></a>
+
+      <nav class="apagar">
+        <a href="indexHome.html" target="_self">Home</a>
+        <p class="headerp">Foco</p>
+        <a href="indexBiblioteca.html" target="_self">Biblioteca</a>
+        <a href="indexQuiz.html" target="_self">Quiz</a>
+        <a href="indexChatIA.html" target="_self">StudyChat.IA</a>
+        <a href="indexRanking.html" target="_self">Ranking</a>
+      </nav>
+
+      <a href="indexPerfil.html" class="icone-perfil">👨‍💻</a>
+
+      <img src="menu.png" class="menu-icon" onclick="openMenu()" alt="Menu" />
+
+      <!-- Menu lateral -->
+      <div id="menuLateral" class="sidebar">
+        <span class="closebtn" onclick="closeMenu()">&times;</span>
+        <a href="indexHome.html" target="_self">Home</a>
+        <p>&gt;Foco&lt;</p>
+        <a href="indexBiblioteca.html" target="_self">Biblioteca</a>
+        <a href="indexQuiz.html" target="_self">Quiz</a>
+        <a href="indexChatIA.html" target="_self">StudyChat.IA</a>
+        <a href="indexRanking.html" target="_self">Ranking</a>
+      </div>
+    </section>
+  </header>
+  
+      <section class="titulo-foco">
+        <h1>Modo Foco</h1>
+        <p>Estude usando o método de pomodoro</p>
+      </section>
+
+  <main>
+
+    <div class="container-foco">
+      <!-- area do foco -->
+      <section class="caixa1">
+        <h2>Foco</h2>
+        <div class="circulo">
+          <div class="progressooi" id="progressoFoco"></div>
+          <h1 id="tempoFoco">25:00</h1>
+        </div>
+        <div class="botoes">
+          <button onclick="iniciarFoco()"><img src="play.png" /></button>
+          <button onclick="pausar()"><img src="pause.png" /></button>
+          <button onclick="resetar()"><img src="refresh.png" /></button>
+        </div>
+      </section>
+      <!-- area do descanso -->
+      <section class="caixa2">
+        <h2>Descanso</h2>
+        <div class="circulo">
+          <div class="progressooi" id="progressoDescanso"></div>
+          <h1 id="tempoDescanso">05:00</h1>
+        </div>
+        <div class="botoes">
+          <button onclick="iniciarDescanso()"><img src="play.png" /></button>
+          <button onclick="pausar()"><img src="pause.png" /></button>
+          <button onclick="resetar()"><img src="refresh.png" /></button>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer></footer>
+  <!-- alarme para tocar apos o termino dos minutos definidos -->
+  <audio id="alarme" src="universfield-ringtone-047-494553.mp3"></audio>
+
+<script src="scriptFoco.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Favoritos</title>
+    <link rel="stylesheet" href="styleFavoritos.css">
+</head>
+
+<body>
+    <header>
+        <section class="header-container">
+            <a href="indexBiblioteca.html"><img src="study4life_glitch_rgb.gif" class="logo" alt="logo study4life" /></a>
+
+
+            <nav class="apagar">
+                <a href="indexHome.html" target="_self">Home</a>
+                <a href="indexFoco.html" target="_self">Foco</a>
+                <p class="headerp">Biblioteca</p>
+                <a href="indexQuiz.html" target="_self">Quiz</a>
+                <a href="indexChatIA.html" target="_self">StudyChat.IA</a>
+                <a href="indexRanking.html" target="_self">Ranking</a>
+            </nav>
+
+            <a href="indexPerfil.html" class="icone-perfil">👨‍💻</a>
+            <img src="menu.png" class="menu-icon" onclick="openMenu()" alt="Menu" />
+
+            <!-- Menu lateral -->
+            <div id="menuLateral" class="sidebar">
+                <span class="closebtn" onclick="closeMenu()">&times;</span>
+                <a href="indexHome.html" target="_self">Home</a>
+                <a href="indexFoco.html" target="_self">Foco</a>
+                <p class="headerp">&gt;Biblioteca&lt;</p>
+                <a href="indexQuiz.html" target="_self">Quiz</a>
+                <a href="indexChatIA.html" target="_self">StudyChat.IA</a>
+                <a href="indexRanking.html" target="_self">Ranking</a>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        
+        <section class="topo-favoritos">
+            <p class="sub-titulo">Seus Favoritos</p>
+            <h1 class="titulo">Acesse rapidamente os conteúdos que você salvou.</h1>
+        </section>
+
+        <!-- barra de pesquisa -->
+        <div class="top-bar">
+
+            <form class="form">
+                <button type="button">
+                    <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
+                        aria-labelledby="search">
+                        <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9"
+                            stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                    </svg>
+                </button>
+
+                <input class="input" placeholder="Buscar por favoritos" required="" type="text" id="buscarFavoritos">
+                <button class="reset" type="reset">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </button>
+            </form>
+
+            <section class="barra-acoes">
+                <button id="limparFavoritos" class="btn-limpar">Limpar favoritos</button>
+            </section>
+        </div>
+
+        <section class="grid-favoritos" id="listaFavoritos">
+        </section>
+    </main>
+
+<script src="scriptFavoritos.js"></script>
+</body>
+</html>

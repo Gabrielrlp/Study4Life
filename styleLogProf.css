@@ -1,0 +1,285 @@
+@charset "UTF-8";
+ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #000000;
+  display: flex;
+  height: 100vh;
+}
+
+.logo {
+  margin: 0px 20px;
+  width: 100px;
+  height: 100px;
+}
+
+.circulo {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  text-decoration: none;
+  color: #aaa;
+  background: #2a2a2a;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  font-size: 150px;
+  transition: all 0.25s ease;
+  cursor: default;
+  animation: descer 1s ease-out;
+}
+
+.opcao-professor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: descer 1s ease-out;
+}
+
+.opcao-professor p {
+  margin-top: 10px;
+  font-size: 45px;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.container {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container2 {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 240px;
+}
+
+.card {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: white;
+  padding: 60px 60px;
+  animation: entrarDireita 1s ease-out;
+}
+
+.subtitulo {
+  color: #888;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+h1 {
+  margin-bottom: 25px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.2s;
+}
+
+input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #3b82f6;
+}
+
+.opcoes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.opcoes a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.forgot {
+  color: #3b82f6;
+  text-decoration: none;
+  margin-left: 22px;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #3b82f6;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #2563eb;
+}
+
+.google-btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.google-btn:hover {
+  background: #cecdcd;
+}
+
+.google-btn img {
+  width: 18px;
+}
+
+.footer {
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+.footer a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+/* keyframes */
+@keyframes descer {
+  from {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes entrarDireita {
+  from {
+    transform: translateY(300px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/*responsividade*/
+
+@media (max-width: 440px) {
+  body {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  header {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px 0px 0px 20px;
+  }
+
+  .logo {
+    width: 70px;
+    height: 70px;
+    margin: 0;
+  }
+
+  .container2 {
+    flex: none;
+    justify-content: center;
+    padding-left: 0;
+    padding: 20px 20px 10px;
+  }
+
+  .circulo {
+    width: 140px;
+    height: 140px;
+    font-size: 70px;
+  }
+
+  .opcao-professor p {
+    font-size: 28px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 15px 20px;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+    min-height: auto;
+    border-radius: 18px;
+    padding: 30px 20px;
+  }
+
+  .subtitulo {
+    font-size: 13px;
+  }
+
+  h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  input[type="email"],
+  input[type="password"] {
+    padding: 11px;
+    font-size: 14px;
+  }
+
+  .opcoes {
+    font-size: 12px;
+    gap: 8px;
+  }
+
+  .forgot {
+    margin-left: 0;
+  }
+
+  .btn,
+  .google-btn {
+    font-size: 14px;
+  }
+
+  .footer {
+    font-size: 12px;
+    text-align: center;
+  }
+}

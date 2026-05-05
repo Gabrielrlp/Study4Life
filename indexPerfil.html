@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <title>Perfil</title>
+  <link rel="stylesheet" href="stylePerfil.css" />
+</head>
+
+<body>
+
+  <header>
+    <section class="header-container">
+      <a href="indexHome.html"><img src="study4life_glitch_rgb.gif" class="logo" alt="logo study4life" /></a>
+
+      <img src="menu.png" class="menu-icon" onclick="openMenu()" alt="Menu" />
+
+      <div id="menuLateral" class="sidebar">
+        <span class="closebtn" onclick="closeMenu()">&times;</span>
+        <a href="indexHome.html" target="_self">Home</a>
+        <a href="indexFoco.html" target="_self">Foco</a>
+        <a href="indexBiblioteca.html" target="_self">Biblioteca</a>
+        <a href="indexQuiz.html" target="_self">Quiz</a>
+        <a href="indexChatIA.html" target="_self">StudyChat.IA</a>
+        <a href="indexRanking.html">Ranking</a>
+        <p>&gt;Perfil&lt;</p>
+      </div>
+    </section>
+
+  </header>
+
+  <main>
+    <div class="dashboard">
+
+      <div class="topo">
+
+        <div class="usuario-info">
+          <div class="usuario-nome">
+            <h1>Olá,</h1>
+            <h1 id="nomeUsuario"><span>Estudante</span></h1>
+
+            <button class="avatar" onclick="trocarAvatar()" id="avatarBtn">👤</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="card streak">
+        <div>
+          <h2>Dias consecutivos</h2>
+          <div class="streak-numero" id="dias">12</div>
+        </div>
+
+        <div class="fogo">🔥</div>
+      </div>
+
+      <div class="card">
+        <div class="xp-topo">
+
+          <div class="xp-esquerda">
+            <div class="level-box" id="boxNivel">13</div>
+
+            <div class="xp-texto">
+              <p>Nível</p>
+              <h3 id="tituloNivel">Expert</h3>
+            </div>
+          </div>
+
+          <div class="xp-numero">
+            <span id="xpAtual">3400</span>/<span id="xpMeta">4000</span> XP
+          </div>
+        </div>
+
+        <div class="barra">
+          <div class="progresso" id="barraXp"></div>
+        </div>
+      </div>
+
+      <div class="stats">
+
+        <div class="card mini">
+          <div class="icone"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+              fill="#FFFFFF">
+              <path
+                d="M582-298 440-440v-200h80v167l118 118-56 57ZM440-720v-80h80v80h-80Zm280 280v-80h80v80h-80ZM440-160v-80h80v80h-80ZM160-440v-80h80v80h-80ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+            </svg></div>
+          <h4 id="horas">86h</h4>
+          <p>Horas totais</p>
+        </div>
+
+        <div class="card mini">
+          <div class="icone"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+              fill="#F4BE55">
+              <path
+                d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm285 93q35-35 35-85v-240H360v240q0 50 35 85t85 35q50 0 85-35Zm115-93q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z" />
+            </svg></div>
+          <h4 id="ranking">#3</h4>
+          <p>Ranking</p>
+        </div>
+
+        <div class="card mini">
+          <div class="icone"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+              fill="#7ed957">
+              <path d="m136-240-56-56 296-298 160 160 208-206H640v-80h240v240h-80v-104L536-320 376-480 136-240Z" />
+            </svg></div>
+          <h4 id="nivelMini">13</h4>
+          <p>Nível</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="missoes-topo">
+          <h2>Metas Diárias</h2>
+          <div class="contador"><span id="feitas">0</span>/3</div>
+        </div>
+
+        <div class="missao">
+          <div class="missao-left">
+            <span>Estudar por 1 hora</span>
+          </div>
+          <div class="recompensa">+60 XP</div>
+        </div>
+
+        <div class="missao">
+          <div class="missao-left">
+            <span>Concluir 1 aula</span>
+          </div>
+          <div class="recompensa">+80 XP</div>
+        </div>
+
+        <div class="missao">
+          <div class="missao-left">
+            <span>Responder Quiz</span>
+          </div>
+          <div class="recompensa">+40 XP</div>
+        </div>
+      </div>
+
+      <div class="config-container">
+        <button class="btn-config" onclick="toggleConfig()">
+          Configurações
+          <span id="setaConfig">▾</span>
+        </button>
+
+        <div class="menu-config" id="menuConfig">
+          <button>Falar com o Suporte</button>
+          <button>Alterar tema</button>
+          <button>Trocar de Conta</button>
+          <button>Sair da conta</button>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+<script src="scriptPerfil.js"></script>
+</body>
+</html>

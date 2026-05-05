@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <title>Ranking</title>
+  <link rel="stylesheet" href="styleRanking.css" />
+</head>
+
+<body>
+
+  <header>
+    <section class="header-container">
+      <a href="indexHome.html"><img src="study4life_glitch_rgb.gif" class="logo" alt="Imagem-logo" /></a>
+
+      <nav class="apagar">
+        <a href="indexHome.html" target="_self">Home</a>
+        <a href="indexFoco.html" target="_self">Foco</a>
+        <a href="indexBiblioteca.html" target="_self">Biblioteca</a>
+        <a href="indexQuiz.html" target="_self">Quiz</a>
+        <a href="indexChatIA.html" target="_self">StudyChat.IA</a>
+        <p class="headerp">Ranking</p>
+      </nav>
+
+      <a href="indexPerfil.html" class="icone-perfil">👨‍💻</a>
+      <img src="menu.png" class="menu-icon" onclick="openMenu()" alt="Menu" />
+
+      <!-- Menu lateral -->
+      <div id="menuLateral" class="sidebar">
+        <span class="closebtn" onclick="closeMenu()">&times;</span>
+        <a href="indexHome.html" target="_self">Home</a>
+        <a href="indexFoco.html" target="_self">Foco</a>
+        <a href="indexBiblioteca.html" target="_self">Biblioteca</a>
+        <a href="indexQuiz.html" target="_self">Quiz</a>
+        <a href="indexChatIA.html" target="_self">StudyChat.IA</a>
+        <p>&gt;Ranking&lt;</p>
+      </div>
+    </section>
+  </header>
+
+  <section>
+    <h1 class="titulo" id="tituloRanking">Ranking Semanal</h1>
+    <p class="sub-titulo">Complete missões, evolua de nível, mantenha a sequência diária e dispute o ranking contra
+      outros jogadores!</p>
+  </section>
+
+  <main class="ranking-page">
+
+    <!-- topo do ranking -->
+    <section class="ranking-topo">
+      <h1 id="titulo-ranking">Ranking</h1>
+
+      <div class="filtros-ranking">
+        <button class="filtro ativo" id="btnSemanal">Semanal</button>
+        <button class="filtro" id="btnMensal">Mensal</button>
+      </div>
+    </section>
+
+    <!-- pódio -->
+    <section class="podio">
+      <article class="podio-item segundo">
+        <div class="avatar">🧑‍💻</div>
+        <h2>Pedro Santos</h2>
+        <p>3800 XP</p>
+        <div class="bloco-podio prata">🥈</div>
+      </article>
+
+      <article class="podio-item primeiro">
+        <div class="avatar">👩‍🎓</div>
+        <h2>Ana Clara</h2>
+        <p>4200 XP</p>
+        <div class="bloco-podio ouro">🥇</div>
+      </article>
+
+      <article class="podio-item terceiro">
+        <div class="avatar">👨‍💻</div>
+        <h2>Você</h2>
+        <p>3400 XP</p>
+        <div class="bloco-podio bronze">🥉</div>
+      </article>
+    </section>
+
+    <!-- lista -->
+    <section class="lista-ranking">
+
+      <article class="ranking-card">
+        <div class="ranking-esquerda">
+          <span class="posicao medalha">🥇</span>
+          <span class="avatar-lista">👩‍🎓</span>
+
+          <div class="ranking-info">
+            <h3>Maria Silva</h3>
+            <p>Nível 15 · 🔥 30 dias</p>
+          </div>
+        </div>
+
+        <span class="pontuacao">4200</span>
+      </article>
+
+      <article class="ranking-card">
+        <div class="ranking-esquerda">
+          <span class="posicao medalha">🥈</span>
+          <span class="avatar-lista">🧑‍💻</span>
+
+          <div class="ranking-info">
+            <h3>Pedro Santos</h3>
+            <p>Nível 13 · 🔥 25 dias</p>
+          </div>
+        </div>
+
+        <span class="pontuacao">3800</span>
+      </article>
+
+      <article class="ranking-card voce">
+        <div class="ranking-esquerda">
+          <span class="posicao medalha">🥉</span>
+          <span class="avatar-lista">👨‍💻</span>
+
+          <div class="ranking-info">
+            <h3>Você</h3>
+            <p>Nível 13 · 🔥 12 dias</p>
+          </div>
+        </div>
+
+        <span class="pontuacao">3400</span>
+      </article>
+
+      <article class="ranking-card">
+        <div class="ranking-esquerda">
+          <span class="posicao">4</span>
+          <span class="avatar-lista">👨‍🏫</span>
+
+          <div class="ranking-info">
+            <h3>Ana Costa</h3>
+            <p>Nível 11 · 🔥 18 dias</p>
+          </div>
+        </div>
+
+        <span class="pontuacao">3100</span>
+      </article>
+
+      <article class="ranking-card">
+        <div class="ranking-esquerda">
+          <span class="posicao">5</span>
+          <span class="avatar-lista">🤵</span>
+
+          <div class="ranking-info">
+            <h3>Lucas Oliveira</h3>
+            <p>Nível 10 · 🔥 14 dias</p>
+          </div>
+        </div>
+
+        <span class="pontuacao">2900</span>
+      </article>
+
+      <article class="ranking-card">
+        <div class="ranking-esquerda">
+          <span class="posicao">6</span>
+          <span class="avatar-lista">👩‍💼</span>
+
+          <div class="ranking-info">
+            <h3>Julia Ferreira</h3>
+            <p>Nível 9 · 🔥 10 dias</p>
+          </div>
+        </div>
+
+        <span class="pontuacao">2600</span>
+      </article>
+
+      <article class="ranking-card">
+        <div class="ranking-esquerda">
+          <span class="posicao">7</span>
+          <span class="avatar-lista">🧑‍💻</span>
+
+          <div class="ranking-info">
+            <h3>Marcos Vinicius</h3>
+            <p>Nível 8 · 🔥 11 dias</p>
+          </div>
+        </div>
+
+        <span class="pontuacao">2510</span>
+      </article>
+
+      <article class="ranking-card">
+        <div class="ranking-esquerda">
+          <span class="posicao">8</span>
+          <span class="avatar-lista">🤵</span>
+
+          <div class="ranking-info">
+            <h3>Gabriel Alambida</h3>
+            <p>Nível 7 · 🔥 13 dias</p>
+          </div>
+        </div>
+
+        <span class="pontuacao">2400</span>
+      </article>
+
+      <article class="ranking-card">
+        <div class="ranking-esquerda">
+          <span class="posicao">9</span>
+          <span class="avatar-lista">👩‍🎓</span>
+
+          <div class="ranking-info">
+            <h3>Maria Fernanda</h3>
+            <p>Nível 7 · 🔥 10 dias</p>
+          </div>
+        </div>
+
+        <span class="pontuacao">2390</span>
+      </article>
+
+      <article class="ranking-card">
+        <div class="ranking-esquerda">
+          <span class="posicao">11</span>
+          <span class="avatar-lista">👩‍💼</span>
+
+          <div class="ranking-info">
+            <h3>Sabrina Cabral</h3>
+            <p>Nível 6 · 🔥 9 dias</p>
+          </div>
+        </div>
+
+        <span class="pontuacao">2350</span>
+      </article>
+
+      <article class="ranking-card">
+        <div class="ranking-esquerda">
+          <span class="posicao">12</span>
+          <span class="avatar-lista">🧑‍💻</span>
+
+          <div class="ranking-info">
+            <h3>João Miguel</h3>
+            <p>Nível 9 · 🔥 10 dias</p>
+          </div>
+        </div>
+
+        <span class="pontuacao">1800</span>
+      </article>
+
+      <article class="ranking-card">
+        <div class="ranking-esquerda">
+          <span class="posicao">13</span>
+          <span class="avatar-lista">🤵</span>
+
+          <div class="ranking-info">
+            <h3>Pedro Henrique</h3>
+            <p>Nível 15 · 🔥 20 dias</p>
+          </div>
+        </div>
+
+        <span class="pontuacao">1750</span>
+      </article>
+
+      <article class="ranking-card">
+        <div class="ranking-esquerda">
+          <span class="posicao">14</span>
+          <span class="avatar-lista">👨‍🎓</span>
+
+          <div class="ranking-info">
+            <h3>Thiago Machado</h3>
+            <p>Nível 16 · 🔥 10 dias</p>
+          </div>
+        </div>
+
+        <span class="pontuacao">1700</span>
+      </article>
+
+      <article class="ranking-card">
+        <div class="ranking-esquerda">
+          <span class="posicao">15</span>
+          <span class="avatar-lista">👩‍🎓</span>
+
+          <div class="ranking-info">
+            <h3>Fernanda Guimarães</h3>
+            <p>Nível 7 · 🔥 14 dias</p>
+          </div>
+        </div>
+
+        <span class="pontuacao">1600</span>
+      </article>
+  </main>
+  
+<script src="scriptRanking.js"></script>
+</body>
+</html>

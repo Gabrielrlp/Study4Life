@@ -1,0 +1,337 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+header {
+  color: #ffffff;
+  border-bottom: 1px solid #444;
+  margin-bottom: 10px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin: 0px 20px;
+  width: 100px;
+  height: 100px;
+}
+
+nav {
+  margin-left: 40px;
+  display: flex;
+  gap: 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: 0.3s;
+  font-size: 22px;
+}
+
+nav a:hover {
+  color: #7ed957;
+}
+
+.icone-perfil {
+  margin-left: auto;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 65px;
+  width: 65px;
+  background: #2a2a2a;
+  margin-right: 30px;
+}
+
+.menu-icon {
+  display: none;
+  width: 25px;
+  cursor: pointer;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -280px;
+  height: 100vh;
+  width: 280px;
+  background-color: #111;
+  padding-top: 60px;
+  transition: 0.3s ease;
+  z-index: 1001;
+  overflow-y: auto;
+  border: 1px solid #7ed957;
+}
+
+.sidebar.active {
+  right: 0;
+}
+
+.sidebar a,
+.sidebar p {
+  display: block;
+  padding: 15px 25px;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar p {
+  color: #7ed957;
+}
+
+.sidebar a:hover {
+  background-color: #575757;
+  color: #7ed957;
+}
+
+.closebtn {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #7ed957;
+}
+
+.headerp {
+  cursor: default;
+  color: #7ed957;
+  font-weight: bold;
+  transition: 0.3s;
+  font-size: 22px;
+}
+
+.titulo {
+  text-align: center;
+  font-weight: 800;
+  padding-top: 45px;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.2;
+  color: #7ed957;
+}
+
+.sub-titulo {
+  text-align: center;
+  font-weight: 800;
+  padding: 10px 0px 20px 0px;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.2;
+  font-size: 20px;
+}
+
+.voce {
+  position: sticky;
+  top: 20px;
+  z-index: 20;
+}
+
+.ranking-page {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 28px 20px 40px;
+}
+
+.ranking-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 34px;
+}
+
+.ranking-topo h1 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.filtros-ranking {
+  background-color: #111;
+  border-radius: 16px;
+  padding: 4px;
+  display: flex;
+  gap: 4px;
+}
+
+.filtro {
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  padding: 10px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.filtro.ativo {
+  background: #7ed957;
+  color: #000000;
+}
+
+.podio {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.ranking-card:hover {
+  scale: 1.01;
+}
+
+.podio-item {
+  text-align: center;
+  width: 280px;
+}
+
+.avatar {
+  font-size: 34px;
+  margin-bottom: 8px;
+}
+
+.podio-item h2 {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.bloco-podio {
+  border-radius: 14px 14px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+.segundo .bloco-podio {
+  height: 95px;
+  background-color: #111;
+}
+
+.primeiro .bloco-podio {
+  height: 130px;
+  background-color: #111;
+}
+
+.terceiro .bloco-podio {
+  height: 80px;
+  background-color: #111;
+}
+
+.lista-ranking {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ranking-card {
+  background-color: #111;
+  border: 1px solid #1e2a3d;
+  border-radius: 16px;
+  padding: 14px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ranking-card.voce {
+  border: 1px solid #7ed957;
+}
+
+.ranking-esquerda {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.posicao {
+  width: 24px;
+  text-align: center;
+  font-size: 22px;
+  color: #8ea0bc;
+}
+
+.posicao.medalha {
+  font-size: 22px;
+}
+
+.avatar-lista {
+  font-size: 24px;
+}
+
+.ranking-info h3 {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.ranking-info p {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.pontuacao {
+  color: #7ed957;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/*responsividade*/
+@media (max-width: 800px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .header-container {
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .logo {
+    width: 85px;
+    height: 85px;
+    margin: 0;
+  }
+
+  .apagar {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    width: 32px;
+    height: 30px;
+  }
+
+  .icone-perfil {
+    margin-left: auto;
+    margin-right: 10px;
+    width: 55px;
+    height: 55px;
+    font-size: 22px;
+  }
+
+  .sub-titulo {
+    font-size: 13px;
+  }
+}

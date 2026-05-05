@@ -1,0 +1,321 @@
+@charset "UTF-8";
+ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+header {
+  color: #ffffff;
+  border-bottom: 1px solid #7ed957;
+  margin-bottom: 10px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin: 0px 20px;
+  width: 100px;
+  height: 100px;
+}
+
+nav {
+  margin-left: 40px;
+  display: flex;
+  gap: 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: 0.3s;
+  font-size: 22px;
+}
+
+nav a:hover {
+  color: #7ed957;
+}
+
+.icone-perfil {
+  margin-left: auto;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 65px;
+  width: 65px;
+  background: #2a2a2a;
+  margin-right: 30px;
+}
+
+.menu-icon {
+  display: none;
+  width: 25px;
+  cursor: pointer;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -280px;
+  height: 100vh;
+  width: 280px;
+  background-color: #111;
+  padding-top: 60px;
+  transition: 0.3s ease;
+  z-index: 1001;
+  overflow-y: auto;
+  border: 1px solid #7ed957;
+}
+
+.sidebar.active {
+  right: 0;
+}
+
+.sidebar a,
+.sidebar p {
+  display: block;
+  padding: 15px 25px;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar p {
+  color: #7ed957;
+}
+
+.sidebar a:hover {
+  background-color: #575757;
+  color: #7ed957;
+}
+
+.closebtn {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.main-container {
+  margin: 0px 30px;
+}
+
+.main-container h2 {
+  margin-bottom: 20px;
+}
+
+.cards-container {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.nivel-home,
+.foco-home {
+  flex: 1;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #111;
+  border: 1px solid #7ed957;
+}
+
+.nivel-home:hover {
+  color: #ffffff;
+  transform: scale(1.02);
+}
+
+.foco-home:hover {
+  color: #ffffff;
+  transform: scale(1.02);
+}
+
+.titulo-blog {
+  margin-bottom: 10px;
+}
+
+.blog {
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid #7ed957;
+  margin: 0px 0px 25px 0px;
+}
+
+.imagem-blog {
+  width: 350px;
+  border-radius: 10px;
+}
+
+.blog-texto h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.blog-texto h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: #8effec;
+}
+
+.blog-texto p {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.icone-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.icone-footer a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+#typing-text::after {
+  content: "|";
+  margin-left: 5px;
+  color: #7ed957;
+  animation: blink 1s infinite;
+}
+
+.link-instagram {
+  color: #7ed957;
+}
+
+span {
+  color: #7ed957;
+}
+
+.headerp {
+  cursor: default;
+  color: #7ed957;
+  font-weight: bold;
+  transition: 0.3s;
+  font-size: 22px;
+}
+
+footer {
+  margin-top: 20px;
+  border-top: 1px solid #7ed957;
+  text-align: center;
+  padding: 30px;
+}
+
+footer h2 {
+  margin-bottom: 20px;
+}
+
+footer img {
+  margin-bottom: 20px;
+  width: 40px;
+}
+
+.icone-footer:hover {
+  scale: 1.03;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/*responsividade*/
+@media (max-width: 800px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .header-container {
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .logo {
+    width: 85px;
+    height: 85px;
+    margin: 0;
+  }
+
+  .apagar {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    width: 32px;
+    height: 30px;
+  }
+
+  .icone-perfil {
+    margin-left: auto;
+    margin-right: 10px;
+    width: 55px;
+    height: 55px;
+    font-size: 22px;
+  }
+
+  .cards-container {
+    flex-direction: column;
+  }
+
+  .blog {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .imagem-blog {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .blog-texto h1 {
+    font-size: 34px;
+  }
+
+  .blog-texto h2 {
+    font-size: 22px;
+  }
+
+  .blog-texto p {
+    font-size: 19px;
+  }
+
+  .icone-footer h2 {
+    font-size: 17px;
+  }
+
+  .nivel-home:hover {
+    color: #ffffff;
+    background-color: #111;
+    scale: 1.03;
+  }
+
+  .foco-home:hover {
+    background-color: #111;
+    color: #ffffff;
+    scale: 1.02;
+  }
+}

@@ -1,0 +1,430 @@
+@charset "UTF-8";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+header {
+  color: #ffffff;
+  border-bottom: 1px solid #444;
+  margin-bottom: 10px;
+}
+
+main {
+  padding: 0 45px 45px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin: 0px 20px;
+  width: 100px;
+  height: 100px;
+}
+
+nav {
+  margin-left: 40px;
+  display: flex;
+  gap: 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: 0.3s;
+  font-size: 22px;
+}
+
+nav a:hover {
+  color: #7ed957;
+}
+
+.icone-perfil {
+  margin-left: auto;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 65px;
+  width: 65px;
+  background: #2a2a2a;
+  margin-right: 30px;
+}
+
+.menu-icon {
+  display: none;
+  width: 25px;
+  cursor: pointer;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -280px;
+  height: 100vh;
+  width: 280px;
+  background-color: #111;
+  padding-top: 60px;
+  transition: 0.3s ease;
+  z-index: 1001;
+  overflow-y: auto;
+  border: 1px solid #7ed957;
+}
+
+.sidebar.active {
+  right: 0;
+}
+
+.sidebar a,
+.sidebar p {
+  display: block;
+  padding: 15px 25px;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar p {
+  color: #7ed957;
+}
+
+.sidebar a:hover {
+  background-color: #575757;
+  color: #7ed957;
+}
+
+.closebtn {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #7ed957;
+}
+
+.headerp {
+  cursor: default;
+  color: #7ed957;
+  font-weight: bold;
+  transition: 0.3s;
+  font-size: 22px;
+}
+
+.titulo {
+  margin-bottom: 45px;
+  font-weight: 800;
+}
+
+.sub-titulo {
+  color: #7ed957;
+  font-weight: 600;
+  margin-top: 45px;
+}
+
+.form {
+  --timing: 0.3s;
+  --width-of-input: 400px;
+  --height-of-input: 40px;
+  --border-height: 2px;
+  --input-bg: #111;
+  --border-color: #7ed957;
+  --border-radius: 30px;
+  --after-border-radius: 1px;
+  position: relative;
+  width: var(--width-of-input);
+  height: var(--height-of-input);
+  display: flex;
+  align-items: center;
+  padding-inline: 0.8em;
+  border-radius: var(--border-radius);
+  transition: border-radius 0.5s ease;
+  background: var(--input-bg, #fff);
+}
+
+.input {
+  font-size: 0.9rem;
+  background-color: transparent;
+  width: 100%;
+  height: 40px;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.form:before {
+  content: "";
+  position: absolute;
+  background: var(--border-color);
+  transform: scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: var(--border-height);
+  left: 0;
+  bottom: 0;
+  border-radius: 1px;
+  transition: transform var(--timing) ease;
+}
+
+.form:focus-within {
+  border-radius: var(--after-border-radius);
+}
+
+input:focus {
+  outline: none;
+  cursor: text;
+}
+
+.form:focus-within:before {
+  transform: scale(1);
+}
+
+.reset {
+  border: none;
+  background: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+input:not(:placeholder-shown) ~ .reset {
+  opacity: 1;
+  visibility: visible;
+}
+
+.form svg {
+  width: 17px;
+  margin-top: 3px;
+  cursor: pointer;
+  color: white;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.barra-acoes {
+  display: flex;
+  align-items: center;
+}
+
+.btn-limpar {
+  width: 200px;
+  height: 40px;
+  border: 1px solid #111;
+}
+
+.barra-acoes button {
+  background: #111;
+  color: white;
+  border: 1px solid #333;
+  border-radius: 30px;
+  padding: 0 22px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.barra-acoes button:hover {
+  border-color: #7ed957;
+  color: #7ed957;
+}
+
+.barra-acoes button:focus {
+  border-color: #7ed957;
+  color: #7ed957;
+}
+
+.grid-favoritos {
+  margin-top: 45px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 22px;
+}
+
+.card-favorito {
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.card-favorito:hover {
+  transform: scale(1.02);
+  border-color: #7ed957;
+}
+
+.card-favorito img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.9);
+}
+
+.info-favorito {
+  padding: 18px;
+}
+
+.info-favorito h2 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.autor {
+  color: #7ed957;
+  font-size: 14px;
+  margin-bottom: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.resumo {
+  color: #ccc;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.tags span {
+  flex: 1;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  padding: 8px;
+  border-radius: 999px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.botoes-card {
+  display: flex;
+  gap: 10px;
+}
+
+.botoes-card a,
+.botoes-card button {
+  flex: 1;
+  height: 42px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.botoes-card a {
+  background: #7ed957;
+  color: #000;
+}
+
+.botoes-card button {
+  background: #1a1a1a;
+  color: white;
+  border: 1px solid #333;
+}
+
+.botoes-card button:hover {
+  color: #ff4d4d;
+  border-color: #ff4d4d;
+}
+
+.mensagem-vazia {
+  grid-column: 1 / -1;
+  text-align: center;
+  background: #111;
+  padding: 50px 20px;
+  border-radius: 16px;
+  border: 1px solid #222;
+}
+
+.mensagem-vazia h2 {
+  color: #7ed957;
+  margin-bottom: 10px;
+}
+
+.mensagem-vazia p {
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.mensagem-vazia a {
+  background: #7ed957;
+  color: #000;
+  padding: 12px 22px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.form button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/*responsividade*/
+@media (max-width: 440px) {
+  .btn-limpar {
+    width: 100px;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .header-container {
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .logo {
+    width: 85px;
+    height: 85px;
+    margin: 0;
+  }
+
+  .apagar {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    width: 32px;
+    height: 30px;
+  }
+
+  .icone-perfil {
+    margin-left: auto;
+    margin-right: 10px;
+    width: 55px;
+    height: 55px;
+    font-size: 22px;
+  }
+}

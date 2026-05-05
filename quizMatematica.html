@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Quiz - Matemática</title>
+    <link rel="stylesheet" href="styleQuizGeral.css">
+</head>
+
+<body>
+
+<header>
+    <section class="header-container">
+      <a href="indexHome.html"><img src="study4life_glitch_rgb.gif" class="logo" alt="logo study4life" /></a>
+
+      <nav class="apagar">
+        <a href="indexHome.html" target="_self">Home</a>
+        <a href="indexFoco.html" target="_self">Foco</a>
+        <a href="indexBiblioteca.html" target="_self">Biblioteca</a>
+        <p class="headerp">Quiz</p>
+        <a href="indexChatIA.html" target="_self">StudyChat.IA</a>
+        <a href="indexRanking.html" target="_self">Ranking</a>
+      </nav>
+
+      <a href="indexPerfil.html" class="icone-perfil">👨‍💻</a>
+      <img src="menu.png" class="menu-icon" onclick="openMenu()" alt="Menu" />
+
+      <!-- Menu lateral -->
+      <div id="menuLateral" class="sidebar">
+        <span class="closebtn" onclick="closeMenu()">&times;</span>
+        <a href="indexHome.html" target="_self">Home</a>
+        <a href="indexFoco.html" target="_self">Foco</a>
+        <a href="indexBiblioteca.html" target="_self">Biblioteca</a>
+        <p>&gt;Quiz&lt;</p>
+        <a href="indexChatIA.html" target="_self">StudyChat.IA</a>
+        <a href="indexRanking.html" target="_self">Ranking</a>
+      </div>
+    </section>
+  </header>
+
+    <main class="area-jornada">
+
+        <section class="card-capitulo">
+            <p>Seção, Capítulo 1</p>
+            <h1>Introdução</h1>
+        </section>
+
+        <section class="titulo-trilha">
+            <span></span>
+            <h2>Aritmética</h2>
+            <span></span>
+        </section>
+
+        <section class="trilha">
+            <button class="fase desbloqueada" onclick="abrirFase(0)">🏆</button>
+            <button class="fase bloqueada" onclick="abrirFase(1)">🧠</button>
+            <button class="fase bloqueada" onclick="abrirFase(2)">🧠</button>
+            <button class="fase bloqueada ultima-fase" onclick="abrirFase(3)">🏅</button>
+        </section>
+
+        <section class="card-capitulo">
+            <p>Seção, Capítulo 2</p>
+            <h1>Introdução</h1>
+        </section>
+
+        <section class="titulo-trilha">
+            <span></span>
+            <h2>Álgebra</h2>
+            <span></span>
+        </section>
+
+        <section class="trilha">
+            <button class="fase desbloqueada" onclick="abrirFase(4)">🏆</button>
+            <button class="fase bloqueada" onclick="abrirFase(5)">🧠</button>
+            <button class="fase bloqueada" onclick="abrirFase(6)">🧠</button>
+            <button class="fase bloqueada ultima-fase" onclick="abrirFase(7)">🏅</button>
+        </section>
+
+    </main>
+
+<script src="scriptQuizMatematica.js"></script>
+</body>
+</html>

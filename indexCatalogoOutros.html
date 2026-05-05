@@ -1,0 +1,1991 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <title>Outros</title>
+  <link rel="stylesheet" href="styleBiblioteca.css">
+</head>
+<body>
+
+  <header>
+    <!-- logo -->
+    <section class="header-container">
+      <a href="indexHome.html"><img src="study4life_glitch_rgb.gif" class="logo" alt="logo study4life" /></a>
+
+      <!-- links -->
+      <nav class="apagar">
+        <a href="indexHome.html" target="_self">Home</a>
+        <a href="indexFoco.html" target="_self">Foco</a>
+        <p class="headerp">Biblioteca</p>
+        <a href="indexQuiz.html" target="_self">Quiz</a>
+        <a href="indexChatIA.html" target="_self">StudyChat.IA</a>
+        <a href="indexRanking.html" target="_self">Ranking</a>
+      </nav>
+
+      <a href="indexPerfil.html" class="icone-perfil">👨‍💻</a>
+      <img src="menu.png" class="menu-icon" onclick="openMenu()" alt="Menu" />
+
+      <!-- menu lateral -->
+      <div id="menuLateral" class="sidebar">
+        <span class="closebtn" onclick="closeMenu()">&times;</span>
+        <a href="indexHome.html" target="_self">Home</a>
+        <a href="indexFoco.html" target="_self">Foco</a>
+        <p class="headerp">&gt;Biblioteca&lt;</p>
+        <a href="indexQuiz.html" target="_self">Quiz</a>
+        <a href="indexChatIA.html" target="_self">StudyChat.IA</a>
+        <a href="indexRanking.html" target="_self">Ranking</a>
+      </div>
+    </section>
+  </header>
+
+  <!-- título -->
+  <aside class="titulo">
+    <p>Catálogo de Estudos</p>
+    <h1>Aprenda no seu ritmo, como em uma maratona de séries.</h1>
+  </aside>
+
+  <!-- barra de pesquisa -->
+  <main>
+    <div class="top-bar">
+
+      <form class="form">
+        <button>
+          <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
+            aria-labelledby="search">
+            <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9"
+              stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <input class="input" placeholder="Buscar" required="" type="text">
+        <button class="reset" type="reset">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </form>
+
+      <!-- buttons depois barra de pesquisa -->
+
+      <!-- button categoria -->
+      <a class="btn-top" onclick="openCategorias()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+          viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
+          <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+        </svg> Categorias</a>
+
+      <!-- button historico -->
+      <a href="indexHistorico.html" class="btn-top"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+          viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
+          <path
+            d="M480-120q-138 0-240.5-91.5T122-440h82q14 104 92.5 172T480-200q117 0 198.5-81.5T760-480q0-117-81.5-198.5T480-760q-69 0-129 32t-101 88h110v80H120v-240h80v94q51-64 124.5-99T480-840q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480q0 75-28.5 140.5t-77 114q-48.5 48.5-114 77T480-120Zm112-192L440-464v-216h80v184l128 128-56 56Z" />
+        </svg> Histórico</a>
+
+      <!-- button favoritos -->
+      <a href="indexFavoritos.html" class="btn-top"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+          viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
+          <path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+        </svg> Favoritos</a>
+
+    </div>
+
+    <!-- recomendados -->
+    <p class="recomendados">Outros Conteúdos:</p>
+
+    <!-- section em alta -->
+    <section>
+      <h1 class="titulo-catalogo">Mais Vistos <svg xmlns="http://www.w3.org/2000/svg" height="38px"
+          viewBox="0 -960 960 960" width="40px" fill="#FFFFFF">
+          <path
+            d="M127.33-240 80-287.33l293.33-293.34L538-416l230-229.33H648.67V-712H880v231.33h-66v-116.66L537.33-320.67 372.67-485.33 127.33-240Z" />
+        </svg></h1>
+    </section>
+
+    <section class="catalogo">
+      <div class="trilho-wrapper">
+        <button class="seta seta-esquerda">&#10094;</button>
+
+        <div class="janela-carrossel">
+          <div class="trilho">
+
+            <article class="card abrir-modal" data-titulo="GIT: Minicurso para Você Sair do Zero! (Aprenda em 45 Minutos)" data-autor="Código Fonte TV" data-resumo="Minicurso de Git para você aprender saindo do zero"
+              data-imagem="https://i.ytimg.com/vi/ts-H3W1uLMM/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLC4cfV8NcyW14UGWvzxSQOKSbMIJw" data-categoria1="Outros" data-categoria2="Em Alta"
+              data-id="conteudo-01" data-link="https://youtu.be/ts-H3W1uLMM?si=_wT4zMmJGOp9LkBk">
+
+              <div class="thumb">
+                <img src="https://i.ytimg.com/vi/ts-H3W1uLMM/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLC4cfV8NcyW14UGWvzxSQOKSbMIJw" alt="GIT: Minicurso para Você Sair do Zero! (Aprenda em 45 Minutos)">
+                <span class="tag video">📚 VIDEO</span>
+              </div>
+              <div class="info">
+                <h3>GIT: Minicurso para Você Sair do Zero!</h3>
+                <p>Código Fonte TV</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="COMO SER MELHOR QUE 99% DAS PESSOAS" data-autor="Eslen Delanogare" data-resumo="COMO SER MELHOR QUE 99% DAS PESSOAS de Eslen Delanogare"
+              data-imagem="https://i.ytimg.com/vi/bg8yyVGD24g/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDf1yhSEehC2fq_6l8Qzub5prSi3A" data-categoria1="Outros" data-categoria2="Em Alta"
+              data-id="conteudo-02" data-link="https://youtu.be/bg8yyVGD24g?si=4T7HlIqA_hjSoLDD">
+
+              <div class="thumb">
+                <img src="https://i.ytimg.com/vi/bg8yyVGD24g/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDf1yhSEehC2fq_6l8Qzub5prSi3A" alt="COMO SER MELHOR QUE 99% DAS PESSOAS">
+                <span class="tag video">📚 VIDEO</span>
+              </div>
+              <div class="info">
+                <h3>COMO SER MELHOR QUE 99% DAS PESSOAS</h3>
+                <p>Eslen Delanogare</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="AULA OBRIGATÓRIA PARA INVESTIDORES INICIANTES!" data-autor="Gêmeos Investem" data-resumo="AULA OBRIGATÓRIA PARA INVESTIDORES INICIANTES! GANHE DINHEIRO COM SEGURANÇA de Gêmeos Investem em menos de 20 minutos"
+              data-imagem="https://i.ytimg.com/vi/qpTVQ616wok/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDeUPYyqRhGpvhnTzzukJBy1HWanw" data-categoria1="Outros" data-categoria2="Em Alta"
+              data-id="conteudo-03" data-link="https://youtu.be/qpTVQ616wok?si=UxLu5kfBw_jnST1S">
+
+              <div class="thumb">
+                <img src="https://i.ytimg.com/vi/qpTVQ616wok/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDeUPYyqRhGpvhnTzzukJBy1HWanw" alt="AULA OBRIGATÓRIA PARA INVESTIDORES INICIANTES!">
+                <span class="tag video">📚 VIDEO</span>
+              </div>
+              <div class="info">
+                <h3>AULA PARA INVESTIDORES INICIANTES!</h3>
+                <p>Gêmeos Investem</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="Como dar conta de tudo Dicas de produtividade" data-autor="Pedro Cooke" data-resumo="Como dar conta de tudo — Dicas de produtividade e gestão do tempo em menos de 20 minutos de Pedro Cooke"
+              data-imagem="https://i.ytimg.com/vi/oQN371YOhaQ/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDGh6YIHMKK3Aso3w9V_crVGEfGLA" data-categoria1="Outros" data-categoria2="Em Alta"
+              data-id="conteudo-04" data-link="https://youtu.be/oQN371YOhaQ?si=hr6ZzOAk44ph_aBQ">
+
+              <div class="thumb">
+                <img src="https://i.ytimg.com/vi/oQN371YOhaQ/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDGh6YIHMKK3Aso3w9V_crVGEfGLA" alt="Como dar conta de tudo Dicas de produtividade">
+                <span class="tag video">📚 VIDEO</span>
+              </div>
+              <div class="info">
+                <h3>Como dar conta de tudo Dicas de produtividade</h3>
+                <p>Pedro Cooke</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="EMPREENDEDORISMO" data-autor="Inteligência Ltda" data-resumo="EMPREENDEDORISMO: TALLIS GOMES, ALFREDO SOARES E BRUNO NARDON - Inteligência Ltda. Podcast N1825"
+              data-imagem="https://i.ytimg.com/vi/ud418rRiD8I/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDi3a7fEP_JfzEhLCsxwWI8EA4pSA" data-categoria1="Outros" data-categoria2="Em Alta"
+              data-id="conteudo-05" data-link="https://www.youtube.com/live/ud418rRiD8I?si=8LpYqiJRseUJZz1k">
+
+              <div class="thumb">
+                <img src="https://i.ytimg.com/vi/ud418rRiD8I/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDi3a7fEP_JfzEhLCsxwWI8EA4pSA" alt="EMPREENDEDORISMO">
+                <span class="tag video">📚 VIDEO</span>
+              </div>
+              <div class="info">
+                <h3>EMPREENDEDORISMO</h3>
+                <p>Inteligência Ltda</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="Como começar no Marketing Digital" data-autor="Daniel Penin" data-resumo="Como começar no Marketing Digital - Guia para Iniciantes com Daniel Penin em menos de 10 minutos"
+              data-imagem="https://i.ytimg.com/vi/ice_xL6x4Qg/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLC9OOlY5zhzQlyk7Juaojno1zNXlw" data-categoria1="Outros" data-categoria2="Em Alta"
+              data-id="conteudo-06" data-link="https://youtu.be/ice_xL6x4Qg?si=GZC_nuHIaIY-Z4Ij">
+
+              <div class="thumb">
+                <img src="https://i.ytimg.com/vi/ice_xL6x4Qg/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLC9OOlY5zhzQlyk7Juaojno1zNXlw" alt="Como começar no Marketing Digital">
+                <span class="tag video">📚 VIDEO</span>
+              </div>
+              <div class="info">
+                <h3>Como começar no Marketing Digital</h3>
+                <p>Daniel Penin</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="INTELIGÊNCIA EMOCIONAL" data-autor="Saber Coletivo" data-resumo="INTELIGÊNCIA EMOCIONAL: O que é, Benefícios e Como Desenvolver | Daniel Goleman de Saber Coletivo"
+              data-imagem="https://i.ytimg.com/vi/mgGpIMaPAKQ/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLAqjqDCF73D5_bVHegfExniEr6xvQ" data-categoria1="Outros" data-categoria2="Em Alta"
+              data-id="conteudo-07" data-link="https://youtu.be/mgGpIMaPAKQ?si=vy9ZPxA_C3XBlJBI">
+
+              <div class="thumb">
+                <img src="https://i.ytimg.com/vi/mgGpIMaPAKQ/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLAqjqDCF73D5_bVHegfExniEr6xvQ" alt="INTELIGÊNCIA EMOCIONAL: O que é, Benefícios e Como Desenvolver">
+                <span class="tag video">📚 VIDEO</span>
+              </div>
+              <div class="info">
+                <h3>INTELIGÊNCIA EMOCIONAL</h3>
+                <p>Saber Coletivo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="Curso COMPLETO de oratória para INICIANTES" data-autor="El Professor da Oratória" data-resumo="Curso COMPLETO de oratória para INICIANTES de El Professor da Oratória"
+              data-imagem="https://i.ytimg.com/vi/JkhA2cxeOaA/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDN_g8kQ94ozmBLq2Hv-RpchWrr9Q" data-categoria1="Outros" data-categoria2="Em Alta"
+              data-id="conteudo-08" data-link="https://youtu.be/JkhA2cxeOaA?si=ze988MxgPrhn1zYy">
+
+              <div class="thumb">
+                <img src="https://i.ytimg.com/vi/JkhA2cxeOaA/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDN_g8kQ94ozmBLq2Hv-RpchWrr9Q" alt="Curso COMPLETO de oratória para INICIANTES">
+                <span class="tag video">📚 VIDEO</span>
+              </div>
+              <div class="info">
+                <h3>Curso COMPLETO de oratória para INICIANTES</h3>
+                <p>El Professor da Oratória</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <button class="seta seta-direita">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- sectrion Git e GitHub -->
+    <section>
+      <h1 class="titulo-catalogo">Git e GitHub</h1>
+    </section>
+
+    <!-- catalogo -->
+    <section class="catalogo">
+      <div class="trilho-wrapper">
+        <button class="seta seta-esquerda">&#10094;</button>
+
+        <div class="janela-carrossel">
+          <div class="trilho">
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+        <button class="seta seta-direita">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- section Desenvolvimento Pessoal -->
+    <section>
+      <h1 class="titulo-catalogo">Desenvolvimento Pessoal</h1>
+    </section>
+
+    <section class="catalogo">
+      <div class="trilho-wrapper">
+        <button class="seta seta-esquerda">&#10094;</button>
+
+        <div class="janela-carrossel">
+          <div class="trilho">
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+        <button class="seta seta-direita">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- section Investimentos -->
+    <section>
+      <h1 class="titulo-catalogo">Investimentos</h1>
+    </section>
+
+    <section class="catalogo">
+      <div class="trilho-wrapper">
+        <button class="seta seta-esquerda">&#10094;</button>
+
+        <div class="janela-carrossel">
+          <div class="trilho">
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+        <button class="seta seta-direita">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- section Produtividade -->
+    <section>
+      <h1 class="titulo-catalogo">Produtividade</h1>
+    </section>
+
+    <section class="catalogo">
+      <div class="trilho-wrapper">
+        <button class="seta seta-esquerda">&#10094;</button>
+
+        <div class="janela-carrossel">
+          <div class="trilho">
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+        <button class="seta seta-direita">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- section Empreendedorismo -->
+    <section>
+      <h1 class="titulo-catalogo">Empreendedorismo</h1>
+    </section>
+
+    <section class="catalogo">
+      <div class="trilho-wrapper">
+        <button class="seta seta-esquerda">&#10094;</button>
+
+        <div class="janela-carrossel">
+          <div class="trilho">
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+        <button class="seta seta-direita">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- section Marketing Digital -->
+    <section>
+      <h1 class="titulo-catalogo">Marketing Digital</h1>
+    </section>
+
+    <section class="catalogo">
+      <div class="trilho-wrapper">
+        <button class="seta seta-esquerda">&#10094;</button>
+
+        <div class="janela-carrossel">
+          <div class="trilho">
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+        <button class="seta seta-direita">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- section Inteligência Emocional -->
+    <section>
+      <h1 class="titulo-catalogo">Inteligência Emocional</h1>
+    </section>
+
+    <section class="catalogo">
+      <div class="trilho-wrapper">
+        <button class="seta seta-esquerda">&#10094;</button>
+
+        <div class="janela-carrossel">
+          <div class="trilho">
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+        <button class="seta seta-direita">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- section Oratória e Comunicação -->
+    <section>
+      <h1 class="titulo-catalogo">Oratória e Comunicação</h1>
+    </section>
+
+    <section class="catalogo">
+      <div class="trilho-wrapper">
+        <button class="seta seta-esquerda">&#10094;</button>
+
+        <div class="janela-carrossel">
+          <div class="trilho">
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+        <button class="seta seta-direita">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- section Currículo e LinkedIn -->
+    <section>
+      <h1 class="titulo-catalogo">Currículo e LinkedIn</h1>
+    </section>
+
+       <section class="catalogo">
+      <div class="trilho-wrapper">
+        <button class="seta seta-esquerda">&#10094;</button>
+
+        <div class="janela-carrossel">
+          <div class="trilho">
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+        <button class="seta seta-direita">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- section Saúde Mental -->
+    <section>
+      <h1 class="titulo-catalogo">Saúde Mental</h1>
+    </section>
+
+    <section class="catalogo">
+      <div class="trilho-wrapper">
+        <button class="seta seta-esquerda">&#10094;</button>
+
+        <div class="janela-carrossel">
+          <div class="trilho">
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+        <button class="seta seta-direita">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- section Métodos de Estudo -->
+    <section>
+      <h1 class="titulo-catalogo">Métodos de Estudo</h1>
+    </section>
+
+    <section class="catalogo">
+      <div class="trilho-wrapper">
+        <button class="seta seta-esquerda">&#10094;</button>
+
+        <div class="janela-carrossel">
+          <div class="trilho">
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+        <button class="seta seta-direita">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- section Preparatótio ENEM/Vestibular -->
+    <section>
+      <h1 class="titulo-catalogo">Preparatótio ENEM/Vestibular</h1>
+    </section>
+
+    <section class="catalogo">
+      <div class="trilho-wrapper">
+        <button class="seta seta-esquerda">&#10094;</button>
+
+        <div class="janela-carrossel">
+          <div class="trilho">
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+        <button class="seta seta-direita">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- section Motivacional -->
+    <section>
+      <h1 class="titulo-catalogo">Motivacional</h1>
+    </section>
+
+    <section class="catalogo">
+      <div class="trilho-wrapper">
+        <button class="seta seta-esquerda">&#10094;</button>
+
+        <div class="janela-carrossel">
+          <div class="trilho">
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+            <article class="card abrir-modal" data-titulo="titulo" data-autor="autor" data-resumo="resumo"
+              data-imagem="PLACEHOLDER.jpeg" data-categoria1="categoria1" data-categoria2="categoria2"
+              data-id="conteudo-00">
+
+              <div class="thumb">
+                <img src="PLACEHOLDER.jpeg" alt="Curso de HTML e CSS">
+                <span class="tag video">📚 CURSO</span>
+              </div>
+              <div class="info">
+                <h3>Titulo Conteúdo</h3>
+                <p>Autor do Conteúdo</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+        <button class="seta seta-direita">&#10095;</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- menu lateral categorias -->
+  <div id="menuCategorias" class="sidebar-categorias">
+    <span class="closebtn-categorias" onclick="closeCategorias()">&times;</span>
+    <a href="indexBiblioteca.html">Recomendados</a>
+    <a href="indexCatalogoPort.html">Português</a>
+    <a href="indexCatalogoMat.html">Matemática</a>
+    <a href="indexCatalogoCie.html">Ciências</a>
+    <a href="indexCatalogoGeo.html">Geografia</a>
+    <a href="indexCatalogoFilo.html">Filosofia</a>
+    <a href="indexCatalogoHist.html">História</a>
+    <a href="indexCatalogoFis.html">Física</a>
+    <a href="indexCatalogoQui.html">Química</a>
+    <a href="indexCatalogoReda.html">Redação</a>
+    <a href="indexCatalogoBio.html">Biologia</a>
+    <a href="indexCatalogoLing.html">Línguas Extrangeiras</a>
+    <a href="indexCatalogoTec.html">Técnologias</a>
+    <p><span class="categoria-destaque"> &gt;Outros&lt; </span></p>
+    <!-- <a href="indexCatalogoCanais.html">Canais Recomendados</a> -->
+  </div>
+
+  <!-- caixa modal -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-box" id="modalBox">
+
+      <div class="modal-topo">
+        <img id="modalImagem" src="" alt="Capa do conteúdo">
+        <button class="fechar-modal" id="fecharModal">&times;</button>
+      </div>
+
+      <div class="modal-conteudo">
+        <h2 id="modalTitulo"></h2>
+        <p id="modalAutor" class="modal-autor"></p>
+
+        <div class="modal-resumo-area">
+          <p id="modalResumo" class="modal-resumo"></p>
+        </div>
+
+        <div class="modal-tags">
+          <span id="modalCategoria1" class="modal-tag"></span>
+          <span id="modalCategoria2" class="modal-tag"></span>
+        </div>
+
+        <a id="modalLink" class="btn-modal btn-assistir" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
+            <path d="M320-200v-560l440 280-440 280Z" />
+          </svg> Acessar Conteúdo
+        </a>
+
+        <div class="modal-botoes">
+          <button class="btn-modal" id="btnFavoritar">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
+              <path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+            </svg>
+            Favoritar
+          </button>
+
+          <button class="btn-modal" id="btnConcluir">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
+              <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+            </svg>
+            Concluir
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="scriptBiblioteca.js"></script>
+</body>
+</html>
