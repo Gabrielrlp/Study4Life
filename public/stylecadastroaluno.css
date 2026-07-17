@@ -1,0 +1,359 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #000000;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 500px;
+  overflow-x: hidden;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  z-index: 10;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  margin: 0;
+}
+
+.container2 {
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+}
+
+.opcao-aluno {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: descer 1s ease-out;
+}
+
+.circulo {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  text-decoration: none;
+  color: #aaa;
+  background: #2a2a2a;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  font-size: 150px;
+  transition: all 0.25s ease;
+  cursor: default;
+}
+
+.opcao-aluno p {
+  margin-top: 10px;
+  font-size: 45px;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.container {
+  width: 100%;
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 100%;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: white;
+  padding: 60px 60px;
+  animation: entrarDireita 1s ease-out;
+}
+
+.subtitulo {
+  color: #888;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+h1 {
+  margin-bottom: 25px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.2s;
+}
+
+input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus {
+  border-color: #3b82f6;
+}
+
+.opcoes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.opcoes a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.checkbox-area {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  color: #000;
+  line-height: 1.4;
+}
+
+.checkbox-area a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.span {
+  cursor: text;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #3b82f6;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #2563eb;
+}
+
+.cad-btn {
+  font-size: 13px;
+}
+
+.cad-btn a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.color-verde {
+  color: #7ed957;
+}
+
+.color-vermelho {
+  color: red;
+}
+
+/* keyframes */
+@keyframes descer {
+  from {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes entrarDireita {
+  from {
+    transform: translateY(300px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/*responsividade*/
+
+@media (max-width: 440px) {
+  body {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  header {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px 0px 0px 20px;
+  }
+
+  .logo {
+    width: 70px;
+    height: 70px;
+    margin: 0;
+  }
+
+  .container2 {
+    flex: none;
+    justify-content: center;
+    padding-left: 0;
+    padding: 20px 20px 10px;
+  }
+
+  .circulo {
+    width: 140px;
+    height: 140px;
+    font-size: 70px;
+  }
+
+  .opcao-aluno p {
+    font-size: 28px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 15px 20px;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+    min-height: auto;
+    border-radius: 18px;
+    padding: 30px 20px;
+  }
+
+  .subtitulo {
+    font-size: 13px;
+  }
+
+  h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  input[type="email"],
+  input[type="password"] {
+    padding: 11px;
+    font-size: 14px;
+  }
+
+  .opcoes {
+    font-size: 12px;
+    gap: 8px;
+  }
+
+  .btn {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+  }
+
+  header {
+    left: 20px;
+    padding: 0;
+  }
+
+  .logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .container2 {
+    width: 100%;
+    min-height: 42dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 20px 20px;
+  }
+
+  .circulo {
+    width: 150px;
+    height: 150px;
+    font-size: 75px;
+  }
+
+  .opcao-aluno p {
+    font-size: 28px;
+  }
+
+  .container {
+    width: 100%;
+    min-height: auto;
+    padding: 0;
+  }
+
+  .card {
+    width: 100%;
+    min-height: 58dvh;
+    border-radius: 25px 25px 0 0;
+    padding: 35px 20px;
+  }
+
+  .subtitulo {
+    font-size: 13px;
+  }
+
+  h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  input[type="email"],
+  input[type="password"],
+  input[type="text"],
+  input[type="file"] {
+    padding: 11px;
+    font-size: 14px;
+  }
+
+  .opcoes {
+    font-size: 12px;
+    gap: 8px;
+  }
+
+  .btn {
+    font-size: 14px;
+  }
+}

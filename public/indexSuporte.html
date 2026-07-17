@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte - Study4Life</title>
+    <link rel="stylesheet" href="styleSuporte.css">
+</head>
+<body>
+    
+    <header>
+    <section class="header-container">
+      <a href="indexHome.html"><img src="study4life_glitch_rgb.gif" class="logo" alt="logo study4life" /></a>
+
+      <nav class="apagar">
+        <a href="indexHome.html" target="_self">Home</a>
+        <a href="indexFoco.html" target="_self">Foco</a>
+        <a href="indexBiblioteca.html" target="_self">Biblioteca</a>
+        <a href="indexQuiz.html" target="_self">Quiz</a>
+        <a href="indexChatIA.html" target="_self">StudyChat.IA</a>
+        <a href="indexRanking.html" target="_self">Ranking</a>
+      </nav>
+
+      <img src="menu.png" class="menu-icon" onclick="openMenu()" alt="Menu" />
+
+      <!-- Menu lateral -->
+      <div id="menuLateral" class="sidebar">
+        <span class="closebtn" onclick="closeMenu()">&times;</span>
+        <a href="indexHome.html" target="_self">Home</a>
+        <a href="indexFoco.html" target="_self">Foco</a>
+        <a href="indexBiblioteca.html" target="_self">Biblioteca</a>
+        <a href="indexQuiz.html" target="_self">Quiz</a>
+        <a href="indexChatIA.html" target="_self">StudyChat.IA</a>
+        <a href="indexRanking.html" target="_self">Ranking</a>
+      </div>
+    </section>
+  </header>
+
+    <main class="container">
+        <section class="chat-card">
+
+            <div class="chat-header">
+                <div>
+                    <span class="badge">IA de Suporte</span>
+                    <h1>Central de Suporte</h1>
+                    <p>Receba ajuda rápida sobre login, senha, XP, ranking, missões e perfil.</p>
+                </div>
+
+                <div class="status">
+                    <span></span>
+                    Online
+                </div>
+            </div>
+
+            <div class="perguntas-rapidas">
+                <button type="button" onclick="perguntaRapida('Como recuperar minha senha?')">🔐 Senha</button>
+                <button type="button" onclick="perguntaRapida('Não consigo fazer login')">🚪 Login</button>
+                <button type="button" onclick="perguntaRapida('Como ganhar XP?')">⚡ XP</button>
+                <button type="button" onclick="perguntaRapida('Como subir de nível?')">📈 Nível</button>
+                <button type="button" onclick="perguntaRapida('Como funcionam as missões?')">🎯 Missões</button>
+                <button type="button" onclick="perguntaRapida('Como funciona o ranking?')">🏆 Ranking</button>
+                <button type="button" onclick="perguntaRapida('Onde estão os quizzes?')">📝 Quizzes</button>
+                <button type="button" onclick="perguntaRapida('Como usar o modo foco?')">⏱️ Foco</button>
+                <button type="button" onclick="perguntaRapida('Onde fica a biblioteca?')">📚 Biblioteca</button>
+                <button type="button" onclick="perguntaRapida('Encontrei um erro no site')">🐞 Erro</button>
+            </div>
+
+            <div id="chatBox" class="chat-box">
+                <div class="mensagem bot">
+                    <div class="avatar">🤖</div>
+                    <div class="texto">
+                        Olá! Eu sou o suporte inteligente do Study4Life. Como posso te ajudar hoje?
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-area">
+                <input type="text" id="pergunta" placeholder="Digite sua pergunta...">
+                <button type="button" onclick="enviarPergunta()">Enviar</button>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="scriptSuporte.js"></script>
+</body>
+</html>
